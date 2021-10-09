@@ -1,0 +1,427 @@
+@import "./variables";
+@import "./mixin";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  color: $pragraph-color;
+  padding: 18px 0;
+  line-height: 1.4;
+  font-size: 15px;
+}
+
+.title {
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: $pd-scc;
+  h2 {
+    text-transform: $capital ;
+    font-size: 30px;
+  }
+}
+/* header */
+.header_page {
+  @include background("../img/banner/home-banner.jpg");
+  background-position: bottom;
+  a img {
+    padding-right: 10px;
+  }
+  nav {
+    @extend %d-flex;
+    padding: 20px 0;
+    .links .link {
+      transition: all 0.3s ease;
+      color: $primary-text;
+      &:hover {
+        color: $primary-text;
+        color:#03a9f4;
+      }
+    }
+  }
+  .sec-content {
+    @extend %d-flex;
+    text-align: center;
+    @include small {
+      text-align: left;
+    }
+    padding-top: 70px;
+    .header_content {
+      h1 {
+        color: $primary-text;
+        font-size: 2rem;
+        @include large {
+          font-size:3.5rem;
+        }
+        @include medium {
+          font-size:3rem;
+        }
+      }
+      p {
+        padding: 10px 0 0;
+        color: $primary-text;
+        font-size: 1.2rem;
+        line-height: 1.5;
+      }
+      a {
+        @include createBtn($black,$primary-text);
+        display: inline-block;
+        margin-top: 25px;
+      }
+    }
+    figure{
+      width: 40%;
+      order: -1;
+      @include small {
+        order: 1;
+      }
+    }
+  }
+}
+
+//features
+.features {
+  padding: 100px 0;
+  .boxs .box {
+    padding: 35px 20px;
+    box-shadow: 1px 1px 4px 1px #e1dfdf;
+    &:hover{
+      box-shadow:1px 1px 5px 1px rgba(122, 118, 128, 0.397);
+          transition:all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+      
+        }
+    h3 {
+      text-transform: $capital ;
+      font-size: 17px;
+      padding-bottom: 15px;
+      letter-spacing: 1.3px;
+    }
+    img {
+      padding-bottom: 20px;
+      width: 40px;
+    }
+    p {
+      color: $pragraph-color;
+      padding: 0;
+      line-height: 1.4;
+      font-size: 17px;
+    }
+    @include large{
+      &:hover{
+        transform:scale(1.1);
+        transition:all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// <!-- interior -->
+.interior_1 {
+  padding: $pd-scc 0;
+  background-color: $bc-sec;
+  .content_sections {
+    h1 {
+      font-size: 2rem;
+      text-transform: $capital ;
+    }
+    a {
+      @include createBtn($primary-text, $primary-text);
+      background-image: linear-gradient(to bottom, #5f55ea, #9646db);
+      margin: 20px 0;
+    }
+  }
+}
+// <!-- interior 2 -->
+.interior_2 {
+  @extend .interior_1;
+}
+/* video */
+
+.vedio-section {
+  padding: $pd-scc 0;
+  position: relative;
+  text-align: center;
+  video {
+    object-fit: cover;
+    max-width: 100%;
+  }
+
+  .play {
+    position: absolute;
+    width: 70px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 2;
+  }
+}
+/* video */
+// pricing
+.pricing {
+  padding: $pd-scc 0;
+  background-color: $bc-sec;
+  .pricing_wrap {
+    .box {
+      &:hover{
+    box-shadow:1px 1px 5px 1px #31363666;
+        transition:all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+    
+      }
+      background-color: $primary-text;
+      .header_price {
+        border-bottom: 1px solid $br-color;
+        padding: 40px;
+        @extend %d-flex;
+        h3 {
+          padding: 0;
+          small {
+            display: block;
+            color: $pragraph-color;
+            padding-top: 10px;
+          }
+        }
+        span {
+          font-weight: bold;
+          font-size: 2rem;
+        }
+      }
+      .price_body {
+        padding: 40px;
+        text-align: center;
+        p {
+          line-height: 2;
+          text-transform: $capital ;
+          font-size: 18px;
+          padding-bottom: 30px;
+          padding-top: 0;
+        }
+        a {
+          @include createBtn($black, $bc-sec);
+          border: 1px solid $br-color;
+        }
+      }
+    }
+  }
+}
+// pricing
+
+// screenshots
+.screenshots {
+  padding: $pd-scc 0;
+  figure img:hover{
+    transform: scale(1.1);
+    transition:all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1) ;
+  }
+}
+// screenshots
+// testmonails
+.testmonails {
+  padding: $pd-scc 0;
+  background-color: $bc-sec;
+  .testmonails_box {
+    background-color: $primary-text;
+    justify-content: center;
+    padding: 30px 0;
+    figure {
+      width: 60px;
+    }
+    .testmonails_content {
+      width: 70%;
+      p {
+        font-size: 14px;
+        padding-top: 0;
+      }
+      h5 {
+        text-transform: $capital ;
+        padding-bottom: 5px;
+      }
+      span {
+        color: $pragraph-color;
+      }
+    }
+  }
+}
+// testmonails
+// download_section
+.download_section {
+  padding: $pd-scc 0;
+  color: $primary-text;
+  background-image: linear-gradient(to bottom, #5f55ea, #9646db);
+  text-align: center;
+  .content {
+    @extend .title;
+    padding-bottom: 0;
+    p {
+      color: $primary-text;
+      padding-bottom: 25px;
+    }
+    a {
+      @include createBtn($primary-text, transparent);
+      display: inline-flex;
+      justify-content: center;
+      border: 1px solid $br-color;
+      padding: 12px 25px;
+      i {
+        font-size: 30px;
+        font-weight: normal;
+        &.apple {
+          font-size: 35px;
+        }
+      }
+
+      span {
+        padding-left: 15px;
+        font-size: 15px;
+        width: 120px;
+        font-weight: 900;
+        text-align: left;
+      }
+    }
+  }
+}
+// download_section
+// <!-- new -->
+.news {
+  padding: 100px 0;
+  .boxs {
+    .box {
+      &:hover{
+        box-shadow:1px 1px 5px 1px #31363626;
+            transition:all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+        
+          }
+      background-color: $bc-sec;
+      padding: 40px;
+      a {
+        @include createBtn($pragraph-color, $primary-text);
+        padding: 7px 20px;
+        border: 1px solid $br-color;
+      }
+      h3 {
+        padding: 25px 0 0;
+        text-transform: uppercase;
+        line-height: 1.5;
+        font-size: 1.5rem;
+      }
+
+      div {
+        padding: 15px 0;
+        span {
+          margin-right: 3px;
+          color: $pragraph-color;
+          @include small {
+            margin-right: 20px;
+          }
+          i {
+            margin-right: 10px;
+            &:last-child {
+              transform: rotateY(180deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// <!-- new -->
+// Footer
+footer {
+  background-color: #000000cf;
+  padding: 100px 0;
+  color: $primary-text;
+  .footer_content {
+    .products {
+      ul {
+        padding-left: 0;
+        li {
+          color: $primary-text;
+          padding-bottom: 15px;
+          font-size: 20px;
+          text-transform: $capital ;
+          &:last-child {
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+    .newsLetter {
+      p {
+        padding: 0 0 25px;
+      }
+      form {
+        .email {
+          @include createBtn($primary-text, $primary-text);
+          padding: 14px 25px;
+          width: 69%;
+          border: none;
+          border-radius: 50px;
+          color: $black;
+          &:focus {
+            outline: none;
+          }
+        }
+        .submit {
+          @include createBtn($primary-text, $primary-text);
+          background-image: linear-gradient(to right, #9646db 50%, #5f55ea);
+          border: none;
+          border-radius: 50px;
+          margin-left: -50px;
+          padding: 15px 35px;
+        }
+      }
+    }
+    .imgs img:hover{
+      transform:scale(1.1);
+      transition:all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+      cursor: pointer;
+    }
+  }
+  .copyright {
+    padding-top: 70px;
+    p {
+      padding: 0;
+      font-size: 17px;
+      color: $primary-text;
+      line-height: 2;
+
+      i,
+      span {
+        color: #9646db;
+      }
+    }
+    .icon {
+      @extend %d-flex;
+
+      span {
+        padding: 8px;
+        background-color: $black;
+        border-radius: 5px;
+      }
+    }
+  }
+  h4 {
+    font-size: 23px;
+    text-transform: uppercase;
+    padding: 0 0 30px;
+  }
+}
