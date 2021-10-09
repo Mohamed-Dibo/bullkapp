@@ -83,9 +83,8 @@ p {
       display: inline-block;
       margin-top: 25px; }
       .header_page .sec-content .header_content a:hover:not([type="email"]) {
-        background-color: blue;
-        color: #fff;
-        font-weight: normal; }
+        background-color: #03a9f4;
+        color: white; }
     .header_page .sec-content figure {
       width: 40%;
       order: -1; }
@@ -138,9 +137,8 @@ p {
     background-image: linear-gradient(to bottom, #5f55ea, #9646db);
     margin: 20px 0; }
     .interior_1 .content_sections a:hover:not([type="email"]), .interior_2 .content_sections a:hover:not([type="email"]) {
-      background-color: blue;
-      color: #fff;
-      font-weight: normal; }
+      background-color: #03a9f4;
+      color: white; }
 
 /* video */
 .vedio-section {
@@ -200,9 +198,8 @@ p {
         transition: all 0.4s ease-in-out;
         border: 1px solid #ccc; }
         .pricing .pricing_wrap .box .price_body a:hover:not([type="email"]) {
-          background-color: blue;
-          color: #fff;
-          font-weight: normal; }
+          background-color: #03a9f4;
+          color: white; }
 
 .screenshots {
   padding: 80px 0; }
@@ -254,9 +251,8 @@ p {
       border: 1px solid #ccc;
       padding: 12px 25px; }
       .download_section .content a:hover:not([type="email"]) {
-        background-color: blue;
-        color: #fff;
-        font-weight: normal; }
+        background-color: #03a9f4;
+        color: white; }
       .download_section .content a i {
         font-size: 30px;
         font-weight: normal; }
@@ -289,9 +285,8 @@ p {
       padding: 7px 20px;
       border: 1px solid #ccc; }
       .news .boxs .box a:hover:not([type="email"]) {
-        background-color: blue;
-        color: #fff;
-        font-weight: normal; }
+        background-color: #03a9f4;
+        color: white; }
     .news .boxs .box h3 {
       padding: 25px 0 0;
       text-transform: uppercase;
@@ -340,9 +335,8 @@ footer {
     border-radius: 50px;
     color: #000; }
     footer .footer_content .newsLetter form .email:hover:not([type="email"]) {
-      background-color: blue;
-      color: #fff;
-      font-weight: normal; }
+      background-color: #03a9f4;
+      color: white; }
     footer .footer_content .newsLetter form .email:focus {
       outline: none; }
   footer .footer_content .newsLetter form .submit {
@@ -360,9 +354,8 @@ footer {
     margin-left: -50px;
     padding: 15px 35px; }
     footer .footer_content .newsLetter form .submit:hover:not([type="email"]) {
-      background-color: blue;
-      color: #fff;
-      font-weight: normal; }
+      background-color: #03a9f4;
+      color: white; }
   footer .footer_content .imgs img:hover {
     transform: scale(1.1);
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
