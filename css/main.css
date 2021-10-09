@@ -84,7 +84,7 @@ p {
       margin-top: 25px; }
       .header_page .sec-content .header_content a:hover:not([type="email"]) {
         background-color: #03a9f4;
-        color: black; }
+        color: #fff; }
     .header_page .sec-content figure {
       width: 40%;
       order: -1; }
@@ -138,7 +138,7 @@ p {
     margin: 20px 0; }
     .interior_1 .content_sections a:hover:not([type="email"]), .interior_2 .content_sections a:hover:not([type="email"]) {
       background-color: #03a9f4;
-      color: black; }
+      color: #fff; }
 
 /* video */
 .vedio-section {
@@ -199,7 +199,7 @@ p {
         border: 1px solid #ccc; }
         .pricing .pricing_wrap .box .price_body a:hover:not([type="email"]) {
           background-color: #03a9f4;
-          color: black; }
+          color: #fff; }
 
 .screenshots {
   padding: 80px 0; }
@@ -252,7 +252,7 @@ p {
       padding: 12px 25px; }
       .download_section .content a:hover:not([type="email"]) {
         background-color: #03a9f4;
-        color: black; }
+        color: #fff; }
       .download_section .content a i {
         font-size: 30px;
         font-weight: normal; }
@@ -286,7 +286,7 @@ p {
       border: 1px solid #ccc; }
       .news .boxs .box a:hover:not([type="email"]) {
         background-color: #03a9f4;
-        color: black; }
+        color: #fff; }
     .news .boxs .box h3 {
       padding: 25px 0 0;
       text-transform: uppercase;
@@ -336,7 +336,7 @@ footer {
     color: #000; }
     footer .footer_content .newsLetter form .email:hover:not([type="email"]) {
       background-color: #03a9f4;
-      color: black; }
+      color: #fff; }
     footer .footer_content .newsLetter form .email:focus {
       outline: none; }
   footer .footer_content .newsLetter form .submit {
@@ -355,7 +355,7 @@ footer {
     padding: 15px 35px; }
     footer .footer_content .newsLetter form .submit:hover:not([type="email"]) {
       background-color: #03a9f4;
-      color: black; }
+      color: #fff; }
   footer .footer_content .imgs img:hover {
     transform: scale(1.1);
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
