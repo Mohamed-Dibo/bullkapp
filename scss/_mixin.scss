@@ -22,7 +22,7 @@
   transition: all 0.4s ease-in-out;
   &:hover:not([type="email"]) {
     background-color: blue;
-    color: black;
+    color: #fff;
     
   }
 }
